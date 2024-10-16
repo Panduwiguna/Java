@@ -1,1 +1,25 @@
-tugas 1
+import java.util.Scanner;
+
+public class nilaiCount {
+    public static void main(String[] args) {
+        Double angka;
+        String nilai;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan nilai: (0-100) ");
+        angka = sc.nextDouble();
+
+        if(angka >= 85){
+            nilai = "A";
+        }else if(angka >= 75){
+            nilai = "B";
+        }else if(angka >= 65){
+            nilai = "C";
+        }else if(angka >= 55){
+            nilai = "D";
+        }else{
+             nilai = "E";
+        }
+        System.out.println(" Nilai: " +nilai);
+    sc.close();
+    }
+}
